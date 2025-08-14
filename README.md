@@ -216,36 +216,36 @@ charts.jsx (Chart Logic)
 
 ### App.jsx (Main Application Controller)
 
-**Connects to:** utils.js, components.jsx, charts.jsx
-**Purpose:** Central state management, API orchestration, user preferences
-**Key Dependencies:** React hooks, APIClient, Storage utilities
+- **Connects to:** utils.js, components.jsx, charts.jsx
+- **Purpose:** Central state management, API orchestration, user preferences
+- **Key Dependencies:** React hooks, APIClient, Storage utilities
 
 
 ### components.jsx (UI Components)
 
-**Contains:** Header, Sidebar, BottomPanel components
-**Connects to:** icons.jsx, utils.js (DataProcessor)
-**Purpose:** User interface elements, symbol selection, feature configuration
+- **Contains:** Header, Sidebar, BottomPanel components
+- **Connects to:** icons.jsx, utils.js (DataProcessor)
+- **Purpose:** User interface elements, symbol selection, feature configuration
 
 
 ### charts.jsx (Chart Rendering)
 
-**Connects to:** icons.jsx, Plotly.js, React
-**Purpose:** Interactive chart rendering, technical indicators, chart synchronization
-**Key Features:** Multi-pane layout, indicator calculations, zoom/pan coordination
+- **Connects to:** icons.jsx, Plotly.js, React
+- **Purpose:** Interactive chart rendering, technical indicators, chart synchronization
+- **Key Features:** Multi-pane layout, indicator calculations, zoom/pan coordination
 
 
 ### utils.js (Utility Functions)
 
-**Contains:** APIClient, DataProcessor, Storage, helper functions
-**Purpose:** Backend communication, data formatting, local storage management
-**API Endpoints:** /symbols, /features, /chart-data, /health
+- **Contains:** APIClient, DataProcessor, Storage, helper functions
+- **Purpose:** Backend communication, data formatting, local storage management
+- **API Endpoints:** /symbols, /features, /chart-data, /health
 
 
 ### icons.jsx (SVG Components)
 
-**Purpose:** Scalable vector icons for UI elements
-**Used by:** All UI components for consistent iconography
+- **Purpose:** Scalable vector icons for UI elements
+- **Used by:** All UI components for consistent iconography
 
 
 
@@ -253,14 +253,14 @@ charts.jsx (Chart Logic)
 
 ### app.py (Flask Server)
 
-**Dependencies:** pandas, numpy, openpyxl, rarfile, Flask-CORS
-**Purpose:** API server, data processing, file system access
-**Key Functions:**
+- **Dependencies:** pandas, numpy, openpyxl, rarfile, Flask-CORS
+- **Purpose:** API server, data processing, file system access
+- **Key Functions:**
 
-Excel configuration loading
-Local dataset discovery
-Dynamic feature data loading
-OHLC data processing
+- Excel configuration loading
+- Local dataset discovery
+- Dynamic feature data loading
+- OHLC data processing
 
 
 
@@ -270,25 +270,25 @@ OHLC data processing
 
 ### Charts_dataset.xlsx (Feature Configuration)
 
-**Purpose:** Maps chart features to data files
-**Structure:** VariableName, Draw, PaneNumber, File Name columns
-**Used by:** Backend for dynamic feature loading
+- **Purpose:** Maps chart features to data files
+- **Structure:** VariableName, Draw, PaneNumber, File Name columns
+- **Used by:** Backend for dynamic feature loading
 
 
 ### Server/ Directory (Data Source)
 
-**Structure:** Symbol folders containing CSV/RAR files
-**Purpose:** Local dataset storage
-**Supported Formats:** CSV files, RAR archives
+- **Structure:** Symbol folders containing CSV/RAR files
+- **Purpose:** Local dataset storage
+- **Supported Formats:** CSV files, RAR archives
 
 
 
 ### Build & Configuration
 
-**vite.config.js** - Frontend build configuration with API proxy
-**tailwind.config.js** - Styling configuration with custom themes
-**package.json** - Frontend dependencies and scripts
-**requirements.txt** - Backend Python dependencies
+- **vite.config.js** - Frontend build configuration with API proxy
+- **tailwind.config.js** - Styling configuration with custom themes
+- **package.json** - Frontend dependencies and scripts
+- **requirements.txt** - Backend Python dependencies
 ## 🎨 Customization
 
 ### Adding New Indicators
